@@ -5,13 +5,30 @@
 <title> My Protfolio
 </title>
 <style>
+body {
+    margin:0 auto;
+}
+header{
+  background-image: url("img/program_bg.jpg");
+  background-size: cover;
+
+}
 label {
   display:block;
+}
+ form {
+  padding:400px;
+}
+#fn {
+  color:#fff;
+  font-size: 25px;
+  padding: 20px;
 }
 </style>
 </head>
 <body>
   <header>
+    <form>
     <fieldset>
       <legend> Login credentials</legend>
       <label for ="username"> User Name: </label>
@@ -21,15 +38,16 @@ label {
       <label></label>
       <button type="button" value="Log in" onclick=logIn()>Log In</button>
     </fieldset>
-
-  </header>
-  <section>
     <div id="fn"></div>
-  </section>
+  </form>
+
+
+
+</header>
     <script type="text/javascript">
       function logIn(){
           var uName= document.getElementById("fname").value;
-          document.getElementById("fn").innerHTML=uName + ("Sussefully logged in");
+          document.getElementById("fn").innerHTML=uName +" " +("Sussefully logged in");
 
     }
 
