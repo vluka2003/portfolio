@@ -50,9 +50,25 @@ $(document).ready(function(){
           $('.toggle-text').click(function() {
               $(this).find('span').each(function() { $(this).toggle(); });
           });
+      /* Map move by click*/
+      $('.maps').click(function () {
+        $('.maps iframe').css("pointer-events", "auto");
+      });
+
+      $( ".maps" ).mouseleave(function() {
+        $('.maps iframe').css("pointer-events", "none");
+      });
 });
 
-
+// Change style of navbar on scroll
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 150) {
+        $("nav").addClass("top-nav-collapse");
+    } else {
+        $("nav").removeClass("top-nav-collapse");
+    }
+});
 //animation
 
 /*Animation Js*/
@@ -104,13 +120,13 @@ $(document).ready(function(){
 
         var topOfWindow = $(window).scrollTop();
         if(imagePos < topOfWindow + 450) {
-        $('.section-heading').addClass("fadeInUp animated");
-        $('#email').addClass("fadeInUp animated");
+        $('.section-heading').addClass("fadeIn animated");
+      /*  $('#email').addClass("fadeInUp animated");
         $('#name').addClass("fadeInUp animated");
         $('#ph').addClass("fadeInUp animated");
         $('#txt').addClass("fadeInUp animated");
         $('.maps').addClass("fadeInUp animated");
-        $('#btn').addClass("fadeInUp animated");
+        $('#btn').addClass("fadeInUp animated");*/
         }
       })
       /*Number block counting*/

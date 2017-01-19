@@ -30,7 +30,7 @@
 
 <?php include ('partials/header.php') ?>
 <!--number block-->
-
+<div class="bgimg-5">
 <div class="container-fluid Numberblock">
   <div class="MaxBlock">
     <div class="NoSmall"><span id="ctl00_ContentPlaceHolder1_ProjectC" class="no">1225</span><br />User Interface</div>
@@ -40,33 +40,11 @@
     <div class="Clear"></div>
   </div>
 </div>
+</div>
 <!-- Container (About Section) -->
 <?php include ('partials/about.php') ?>
 
-<section id="skills" class="bgimg-2">
-  <div class="container">
-    <div class="row">
-    <div class="col-sm-12 contact_page">
-          <h1 class="subtitle text-center title section-heading"> Skill Set </h1>
-          <hr>
-
-      <div class="hi-icon-wrap hi-icon-effect-6 w3-dark-grey animated">
-					<a href="#set-6"><img class="hi-icon" src="img/html.png"/></a>
-          <a href="#set-6"><img class="hi-icon" src="img/css.png"/></a>
-          <a href="#set-6"><img class="hi-icon" src="img/jquery.png"/></a>
-          <a href="#set-6"><img class="hi-icon" src="img/php.png"/></a>
-          <a href="#set-6"><img class="hi-icon" src="img/bootstrap.png"/></a>
-          <a href="#set-6"><img class="hi-icon" src="img/git.png"/></a><br>
-          <a href="#set-6"><img class="hi-icon" src="img/sql.png"/></a>
-          <a href="#set-6"><img class="hi-icon" src="img/ruby.png"/></a>
-          <a href="#set-6"><img class="hi-icon" src="img/react.png"/></a>
-          <a href="#set-6"><img class="hi-icon" src="img/angular-tile.png"/></a>
-
-				</div>
-    </div>
-  </div>
-</div>
-</section>
+<?php include ('partials/skills.php') ?>
 
 <!-- Container (Portfolio Section) -->
 
@@ -93,26 +71,6 @@
 
 <script src="js/jquery.mixitup.js"></script>
 <script src="js/creative.js"></script>
-<script>
-$(document).ready(function(){
-  $('.maps').click(function () {
-    $('.maps iframe').css("pointer-events", "auto");
-  });
-
-  $( ".maps" ).mouseleave(function() {
-    $('.maps iframe').css("pointer-events", "none");
-  });
-});
-// Change style of navbar on scroll
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 150) {
-        $("nav").addClass("top-nav-collapse");
-    } else {
-        $("nav").removeClass("top-nav-collapse");
-    }
-});
-</script>
 
 </body>
 </html>

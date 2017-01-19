@@ -11,11 +11,11 @@
 	{
 		// name validations header form //
 
-		if(empty($_POST['name']))
+		if(empty($_POST['fname']))
 		{
 			$_SESSION['name_error'][]= "Name field should not be empty <br />";
 		} else {#c
-			$name = $_POST["name"];
+			$name = $_POST["fname"];
 			if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
 			$_SESSION['name_error'][] = "Only letters are allowed for Name Format";
 			}
@@ -71,7 +71,7 @@
 				$mail->SMTPSecure = 'tls';
 				$mail->Port = 587;
 
-				$mail->setFrom($from, 'Client Request Corp Lending');
+				$mail->setFrom($from, 'Client Request Portfolio');
 				$mail->addAddress('vluka2003@gmail.com');
 				// $mail->addAddress('mechevarria@exceldebt.com');
 				$mail->isHTML(true);
@@ -88,6 +88,7 @@
                 }
 
 	        }
+			// send mail info 
 			header("Location: home.php#contact");
 
 		}

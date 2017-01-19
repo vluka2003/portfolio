@@ -8,7 +8,7 @@
   </div>
       <!--<p><img src="img/arrow_down.gif" alt="drop arrow" style="width: 20px;"></p>-->
 
-<video id="bgvid" autoplay loop poster="img/Flying-Birds.JPG">
+      <video id="bgvid" autoplay loop poster="img/Flying-Birds.JPG">
           <source src="img/Flying-Birds.mp4" type="video/mp4" />
       </video>
 
