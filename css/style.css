@@ -59,10 +59,10 @@ section {
     display: flex;
     /*text-align: center;*/
     align-items: center;
-    background-image: url(../img/Flying-Birds.JPG);
+    background-image: url('../img/Flying-Birds.JPG');
     /* background-size: contain; */
     background-repeat: no-repeat;
-    background-position: center;
+    /*background-position: center;*/
     background-attachment: fixed;
   }
 }
@@ -344,6 +344,11 @@ video#bgvid {
     background: rgba(255,255,255,1);
     color: #64bb5d;
     transform: translate(0, -1px) rotate(360deg);
+}
+@media (max-width: 480px) {
+  .hi-icon-wrap {
+    width:50%;
+  }
 }
 .skill {
 /*  margin-right: -80px;*/

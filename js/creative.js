@@ -68,9 +68,32 @@ $(window).scroll(function() {
     } else {
         $("nav").removeClass("top-nav-collapse");
     }
+    /*Number block counting*/
+    var no = 1;
+    $('.Numberblock').each(function () {
+                  var imagePos = $(this).offset().top;
+
+                  var topOfWindow = $(window).scrollTop();
+                  if (imagePos < topOfWindow + 500) {
+                      if (no == 1) {
+                          $('.no').each(function () {
+                              $(this).prop('Counter', 0).animate({
+                                  Counter: $(this).text()
+                              }, {
+                                  duration: 4000,
+                                  easing: 'swing',
+                                  step: function (now) {
+                                      $(this).text(Math.ceil(now));
+                                  }
+                              });
+                          });
+                          no = 0;
+                      }
+                  }
+              });
 });
 //animation
-
+if ($(window).width() > 960) {
 /*Animation Js*/
 
     $(window).scroll(function() {
@@ -128,33 +151,10 @@ $(window).scroll(function() {
         $('.maps').addClass("fadeInUp animated");
         $('#btn').addClass("fadeInUp animated");*/
         }
-      })
-      /*Number block counting*/
-      var no = 1;
-      $('.Numberblock').each(function () {
-                    var imagePos = $(this).offset().top;
+      });
 
-                    var topOfWindow = $(window).scrollTop();
-                    if (imagePos < topOfWindow + 500) {
-                        if (no == 1) {
-                            $('.no').each(function () {
-                                $(this).prop('Counter', 0).animate({
-                                    Counter: $(this).text()
-                                }, {
-                                    duration: 4000,
-                                    easing: 'swing',
-                                    step: function (now) {
-                                        $(this).text(Math.ceil(now));
-                                    }
-                                });
-                            });
-                            no = 0;
-                        }
-                    }
-                });
     });
-
-
+  }
     // Modal Image Gallery
     function onClick(element) {
       document.getElementById("img01").src = element.src;
