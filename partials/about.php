@@ -24,6 +24,78 @@
         </div>
 
    </div>
+     <div id="profile">
+       <h2 class="text-center title">Clients </h2>
+       <hr class="short_hr">
+       <div class="container">
+           <div class="col-md-4">
+
+                   <div class="col-md-12 fly-right text-center">
+
+
+                       <div class="imgbox"><img src="img/hp.png" alt="hp"/></div>
+
+
+                   </div>
+
+
+
+                   <div class="col-md-12 fly-right text-center">
+                       <div class="imgbox"><img src="img/visa1.png" alt="visa"/></div>
+
+
+                   </div>
+
+
+
+
+                   <div class="col-md-12 fly-right text-center">
+
+                      <div class="imgbox"><img src="img/jp.jpeg" alt="jpmc"/></div>
+
+
+                   </div>
+
+
+           </div>
+
+           <div class="col-md-4">
+               <div class="col-md-12 fade-it_top text-center">
+
+                       <div class="imgbox"><img src="img/int.png" alt="intuit"/></div>
+
+                   </div>
+
+               <div class="col-md-12">
+                   <img src="img/client.jpeg">
+               </div>
+               <div class="col-md-12 fade-it text-center">
+
+
+                       <div class="imgbox"><img src="img/exce.png" alt="excel"/></div>
+
+               </div>
+           </div>
+
+           <div class="col-md-4">
+                   <div class="col-md-12 fly-left text-center">
+                       <div class="imgbox"><img src="img/dimc.png" alt="dimco apparel"/></div>
+
+                   </div>
+                   <div class="col-md-12 fly-left text-center">
+
+                       <div class="imgbox"><img src="img/web.jpg" alt="webdev"/></div>
+
+                   </div>
+                   <div class="col-md-12 fly-left text-center">
+                       <div class="imgbox"><img src="img/unit.png" alt="unitytax"/></div>
+
+                   </div>
+               </div>
+           </div>
+
+       </div>
+
         <div id="demo" class="collapse in">
 
           <div class="col-sm-4 text-center proimage animated">
@@ -33,7 +105,7 @@
 
     <!-- Hide this text on small devices -->
         <div class="col-sm-8 detailsImg animated">
-          <p>Welcome to my website.</p> <p>I am Vivin Lukose, Graduated in Computer Applications from Madurai Kamaraj University, India.
+           <p>I am Vivin Lukose, Graduated in Computer Applications from Madurai Kamaraj University, India.
             Strarted my Career as a Web Developer.</p>
             <h3>PROFESSIONAL SUMMARY:</h3>
               <ul class="listarrow text-left">

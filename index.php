@@ -43,7 +43,7 @@
       <div class="Clear"></div>
     </div>
   </div>
-  </div>
+</div>
   <!-- Container (About Section) -->
   <?php include ('partials/about.php') ?>
 
@@ -57,6 +57,32 @@
 
 <script src="js/jquery.mixitup.js"></script>
 <script src="js/creative.js"></script>
+<script>
+if (screen && screen.width > 767) {
+document.write('<script src="js/jquery.superscrollorama.js"><\/script>');
+}
+</script>
+<script src="js/agency.min.js"></script>
+<script>
+    $(document).ready(function() {
 
+        $('#exampleModal, #myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8').appendTo("body");
+
+        var controller = $.superscrollorama();
+
+
+        var scrollDuration = 110;
+
+        // individual element tween examples
+        // controller.addTween('#fade-it', TweenMax.from( $('#fade-it'), .5, {css:{opacity: 0}}), scrollDuration);
+        controller.addTween('.fly-right', TweenMax.from( $('.fly-right'), .25, {css:{left:'500px',opacity:-1,height:'25px'}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('.fly-left', TweenMax.from( $('.fly-left'), .25, {css:{right:'500px',opacity:-1,height:'25px'}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('.fade-it,.fade-it_top', TweenMax.from( $('.fade-it,.fade-it_top'), .7, {css:{opacity:-.06,height:'35px'}}), scrollDuration);
+        $('.hidden').removeClass('hidden').hide();
+        $('.toggle-text').click(function() {
+            $(this).find('span').each(function() { $(this).toggle(); });
+        });
+    });
+</script>
 </body>
 </html>

@@ -3,6 +3,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     line-height: 1.8;
+    font-family: Raleway;
 }
 section#myPage {
   padding: 0px;
@@ -705,4 +706,57 @@ margin-top: -10px;
     font-size: 72px;
     line-height: 102px;
     background: url(../img/noborder.jpg) no-repeat center bottom;
+}
+/*Profile pic*/
+#demo {
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+.imgbox {
+    height: 22rem;
+    width: 27.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: white;
+  }
+  .imgv {
+    width: 27.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+  #profile img {
+    background-color: transparent;
+    transition: all 3s ease-in-out;
+}
+}
+.fly-right,.fly-left {
+  position: relative;
+}
+
+.short_hr{
+  width:5%;
+  border-color:#000;
+}
+#profile{
+  padding: 10px;
+}
+
+.fly-left,.fly-right,.fade-it{
+  margin-top:2em;
+}
+
+.fade-it_top{
+  margin-bottom:2.5em;
+}
+
+#profile img{
+  margin-left:1.5em;
+  padding:15px;
+
 }

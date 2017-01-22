@@ -79,11 +79,12 @@
           </form>
         </div>
         <div class="col-md-6">
-           <div class="maps">
+           <div class="text-center">
 
-            <p> 34333 Myrtle Lane. Suite 430 Union City, CA 94587 <br>
+            <p> Union City, CA 94587 <br>
             Phone: (510) 366-4941 | Fax: () <br></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.3073708585518!2d-122.0120257707624!3d37.59675559873701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f955c44fc3e53%3A0x95aa1df224b56355!2s34331+Myrtle+Ln%2C+Union+City%2C+CA+94587!5e0!3m2!1sen!2sus!4v1484640606653" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.3073708585518!2d-122.0120257707624!3d37.59675559873701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f955c44fc3e53%3A0x95aa1df224b56355!2s34331+Myrtle+Ln%2C+Union+City%2C+CA+94587!5e0!3m2!1sen!2sus!4v1484640606653" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+            <img class="imgv" src="img/vi.jpeg" alt="vivi"/>
           </div>
         </div>
       </div>

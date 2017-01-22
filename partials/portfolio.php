@@ -53,19 +53,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Grid Item 3 -->
-                        <div class="mix web" href="img/excel.png" title="Client Name" data-bound="" style="display: inline-block;">
-                            <div class="portfolio-wrapper">
-                                <img src="img/excel.png" alt="Excel Debit Relief">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a href="http://www.exceldebt.com/" class="text-title">Excel Debit</a>
-                                        <span class="text-category">Web Development</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
+
                         <!-- Grid Item 4 -->
                         <div class="mix identity" href="img/apps.png" title="Client Name" data-bound="" style="display: inline-block;">
                             <div class="portfolio-wrapper">
@@ -74,6 +62,19 @@
                                     <div class="caption-text">
                                         <a href="http://www.apps.intuit.com" class="text-title">Apps . Intuit</a>
                                         <span class="text-category">Brand Identity</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid Item 3 -->
+                        <div class="mix web" href="img/excel.png" title="Client Name" data-bound="" style="display: inline-block;">
+                            <div class="portfolio-wrapper">
+                                <img src="img/excel.png" alt="Excel Debit Relief">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="http://www.exceldebt.com/" class="text-title">Excel Debit</a>
+                                        <span class="text-category">Web Development</span>
                                     </div>
                                     <div class="caption-bg"></div>
                                 </div>
