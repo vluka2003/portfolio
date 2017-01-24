@@ -22,7 +22,6 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/ico" href="http://www.insertyourwebsite.com/favicon.ico"/>
  <!--Animate CSS-->
 <link rel="stylesheet" href="css/animate.css">
 </head>
@@ -61,12 +60,15 @@
 if (screen && screen.width > 767) {
 document.write('<script src="js/jquery.superscrollorama.js"><\/script>');
 }
+else {
+$('#profile').hide();
+}
 </script>
 <script src="js/agency.min.js"></script>
 <script>
     $(document).ready(function() {
 
-        $('#exampleModal, #myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8').appendTo("body");
+        /*$('#exampleModal, #myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8').appendTo("body");*/
 
         var controller = $.superscrollorama();
 
